@@ -3,9 +3,14 @@
   <app-search-menu />
   <app-applied-filters />
   <app-sidebar />
-  <div class="flex flex-column px-4">
-    <app-categories />
-    <app-products />
+  <div class="flex flex-column lg:flex-row px-4 md:px-8">
+    <div class="col-12 lg:col-3">
+      <app-categories />
+    </div>
+    <div class="">
+      <app-products class="col-12 lg:col-8" />
+    </div>
   </div>
+  <app-footer />
 </main>
 <router-outlet />

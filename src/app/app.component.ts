@@ -7,11 +7,12 @@ import { CategoriesComponent } from './categories/categories.component';
 import { ProductsComponent } from './products/products.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, SearchMenuComponent, AppliedFiltersComponent, CategoriesComponent, ProductsComponent, SidebarComponent],
+  imports: [RouterOutlet, NavbarComponent, SearchMenuComponent, AppliedFiltersComponent, CategoriesComponent, ProductsComponent, SidebarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

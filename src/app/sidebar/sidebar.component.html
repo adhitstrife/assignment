@@ -1,0 +1,11 @@
+<p-sidebar [(visible)]="sidebarVisible" position="right">
+    <div class="flex align-items-center justify-content-between">
+        <p class="font-semibold">Filter By</p>
+        <p-button label="Clear All" severity="danger" [text]="true"/>
+    </div>
+    <p-divider />
+    <div class="">
+        <p class="font-semibold">Sort</p>
+        <p-selectButton [options]="sortBy" [(ngModel)]="selectedSortBy" optionLabel="name" (onChange)="onSortChange()"/>
+    </div>
+</p-sidebar>

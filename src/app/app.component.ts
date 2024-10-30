@@ -6,11 +6,12 @@ import { AppliedFiltersComponent } from './applied-filters/applied-filters.compo
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductsComponent } from './products/products.component';
 import { SidebarModule } from 'primeng/sidebar';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, SearchMenuComponent, AppliedFiltersComponent, CategoriesComponent, ProductsComponent],
+  imports: [RouterOutlet, NavbarComponent, SearchMenuComponent, AppliedFiltersComponent, CategoriesComponent, ProductsComponent, SidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

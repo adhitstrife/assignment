@@ -2,10 +2,10 @@
     <!-- Suggested code may be subject to a license. Learn more: ~LicenseLog:2477721048. -->
     <div class="flex justify-content-between align-items-center">
         <p class="font-semibold">{{ getProductCount() }} Result Found</p>
-        <p-button label="Sort" />
+        <p-button label="Sort" (click)="onSortClick()" />
     </div>
     <div class="mt-4 flex flex-column gap-4">
-        @for (product of displayedProducts; track $index) {
+        @for (product of sortedProducts; track $index) {
         <app-product-card [product]="product" />
         }
     </div>

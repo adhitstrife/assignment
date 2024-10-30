@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchMenuComponent } from './search-menu/search-menu.component';
 import { AppliedFiltersComponent } from './applied-filters/applied-filters.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, SearchMenuComponent, AppliedFiltersComponent],
+  imports: [RouterOutlet, NavbarComponent, SearchMenuComponent, AppliedFiltersComponent, CategoriesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

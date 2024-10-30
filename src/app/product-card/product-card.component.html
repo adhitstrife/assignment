@@ -1,0 +1,19 @@
+<div class="w-full">
+    <p-card header="{{ product.name }}">
+        <ng-template pTemplate="header">
+            <div class="relative">
+                <img alt="Card" [src]="product.display_image_url !== '' ? product.display_image_url : 'https://via.placeholder.com/150'" />
+                <div *ngIf="product.quantity > 0 && product.quantity < product.low_quantity" class="absolute bottom-0 mb-4 ml-2 left-2">
+                    <p-tag severity="warning" value="On High Demand"></p-tag>
+                </div>
+                <div *ngIf="product.quantity <= 0" class="absolute bottom-0 mb-4 ml-2 left-2">
+                    <p-tag severity="secondary" value="Out Of Stock"></p-tag>
+                </div>
+            </div>
+        </ng-template>
+        <p class="text-center">{{ product.points }} Points</p>
+        <ng-template pTemplate="footer">
+            <p class="text-center">Valid Until: {{ product.valid_until | date: 'MM-dd-yyyy' }}</p>
+        </ng-template>
+    </p-card>
+</div>
